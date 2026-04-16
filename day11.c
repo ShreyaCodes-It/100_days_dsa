@@ -2,35 +2,36 @@
 
 int main() {
     int m, n;
+
     scanf("%d %d", &m, &n);
 
-    int A[m][n], B[m][n], C[m][n];
+    int a[m][n], b[m][n], sum[m][n];
 
-    // Input first matrix
+    // input first matrix
     for(int i = 0; i < m; i++) {
         for(int j = 0; j < n; j++) {
-            scanf("%d", &A[i][j]);
+            scanf("%d", &a[i][j]);
         }
     }
 
-    // Input second matrix
+    // input second matrix
     for(int i = 0; i < m; i++) {
         for(int j = 0; j < n; j++) {
-            scanf("%d", &B[i][j]);
+            scanf("%d", &b[i][j]);
         }
     }
 
-    // Addition
+    // addition
     for(int i = 0; i < m; i++) {
         for(int j = 0; j < n; j++) {
-            C[i][j] = A[i][j] + B[i][j];
+            sum[i][j] = a[i][j] + b[i][j];
         }
     }
 
-    // Output result
+    // print result
     for(int i = 0; i < m; i++) {
         for(int j = 0; j < n; j++) {
-            printf("%d ", C[i][j]);
+            printf("%d ", sum[i][j]);
         }
         printf("\n");
     }
