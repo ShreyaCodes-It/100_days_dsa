@@ -9,8 +9,10 @@ int main() {
     int end = strlen(str) - 1;
     int isPalindrome = 1;
 
-    while (start < end) {
-        if (str[start] != str[end]) {
+    while (start < end) 
+    {
+        if (str[start] != str[end])
+        {
             isPalindrome = 0;
             break;
         }
